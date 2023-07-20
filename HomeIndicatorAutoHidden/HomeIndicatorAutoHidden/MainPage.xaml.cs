@@ -15,6 +15,7 @@ public partial class MainPage : ContentPage
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
+		CounterBtn.Text = count.ToString();
         On<iOS>().SetPrefersHomeIndicatorAutoHidden(!On<iOS>().PrefersHomeIndicatorAutoHidden());
     }
 }
